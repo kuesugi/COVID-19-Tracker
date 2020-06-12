@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var dataFetch = DataFetchRequest()
+    
     var body: some View {
-        Text("Hello, World!")
+        Text("\(dataFetch.totalData.confirmed)")
     }
 }
 
