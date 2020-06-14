@@ -19,6 +19,9 @@
 		27653ECC2493229D008DE496 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ECB2493229D008DE496 /* Statics.swift */; };
 		27653ECF2493DD65008DE496 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ECE2493DD65008DE496 /* RecentView.swift */; };
 		27653ED124948F17008DE496 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ED024948F17008DE496 /* ListHeaderView.swift */; };
+		27653ED32495C24A008DE496 /* CountryDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ED22495C24A008DE496 /* CountryDataView.swift */; };
+		27653ED52495C33F008DE496 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ED42495C33F008DE496 /* Extension.swift */; };
+		27653ED92495CBA2008DE496 /* TotalDataCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ED82495CBA2008DE496 /* TotalDataCard.swift */; };
 		A6A29B25C776939AB94A3F5F /* Pods_COVID_19_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073EDE9E3A9AF4697DB5ECE /* Pods_COVID_19_Tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		27653ECB2493229D008DE496 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
 		27653ECE2493DD65008DE496 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
 		27653ED024948F17008DE496 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		27653ED22495C24A008DE496 /* CountryDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataView.swift; sourceTree = "<group>"; };
+		27653ED42495C33F008DE496 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		27653ED82495CBA2008DE496 /* TotalDataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataCard.swift; sourceTree = "<group>"; };
 		70A1404D0059E254DACA6C66 /* Pods-COVID-19 Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19 Tracker.debug.xcconfig"; path = "Target Support Files/Pods-COVID-19 Tracker/Pods-COVID-19 Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +85,8 @@
 				27653EAC2491CB8C008DE496 /* SceneDelegate.swift */,
 				27653EB12491CB8C008DE496 /* ContentView.swift */,
 				27653ECE2493DD65008DE496 /* RecentView.swift */,
-				27653ED024948F17008DE496 /* ListHeaderView.swift */,
+				27653ED72495CB87008DE496 /* Views */,
+				27653ED62495CB6F008DE496 /* Extensions */,
 				27653ECD2493DD15008DE496 /* Model */,
 				27653ECB2493229D008DE496 /* Statics.swift */,
 				27653EB32491CB8E008DE496 /* Assets.xcassets */,
@@ -106,6 +113,24 @@
 				27653EC32492071B008DE496 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		27653ED62495CB6F008DE496 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27653ED42495C33F008DE496 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27653ED72495CB87008DE496 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27653ED024948F17008DE496 /* ListHeaderView.swift */,
+				27653ED22495C24A008DE496 /* CountryDataView.swift */,
+				27653ED82495CBA2008DE496 /* TotalDataCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5B042345F02C6CC1EACBF14D /* Pods */ = {
@@ -242,7 +267,10 @@
 			files = (
 				27653EAB2491CB8C008DE496 /* AppDelegate.swift in Sources */,
 				27653ECC2493229D008DE496 /* Statics.swift in Sources */,
+				27653ED92495CBA2008DE496 /* TotalDataCard.swift in Sources */,
 				27653ED124948F17008DE496 /* ListHeaderView.swift in Sources */,
+				27653ED32495C24A008DE496 /* CountryDataView.swift in Sources */,
+				27653ED52495C33F008DE496 /* Extension.swift in Sources */,
 				27653EAD2491CB8C008DE496 /* SceneDelegate.swift in Sources */,
 				27653EB22491CB8C008DE496 /* ContentView.swift in Sources */,
 				27653EC42492071B008DE496 /* Model.swift in Sources */,
