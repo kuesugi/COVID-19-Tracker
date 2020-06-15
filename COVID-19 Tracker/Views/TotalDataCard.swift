@@ -10,15 +10,28 @@ import SwiftUI
 
 struct TotalDataCard: View {
     
-    var number: String = "Error"
-    var name: String = "Confirmed"
+    var number: String = "/"
+    var name: String = "Error Name"
     var color: Color = .primary
+    var nameFont: Font = .body
     
     var body: some View {
         
-        
-        
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            VStack {
+                Text(self.number)
+                    .font(.subheadline)
+                    .padding(5)
+                    .foregroundColor(self.color)
+                Text(self.name)
+                    .font(self.nameFont)
+                    .padding(5)
+                    .foregroundColor(self.color)
+            }
+            .frame(width: geometry.size.width, height: 80, alignment: .center)
+            .background(Color("cardBackgroundGray"))
+            .cornerRadius(9.0)
+        }
     }
 }
 
