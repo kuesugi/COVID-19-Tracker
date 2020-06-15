@@ -23,6 +23,8 @@
 		27653ED52495C33F008DE496 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ED42495C33F008DE496 /* Extension.swift */; };
 		27653ED92495CBA2008DE496 /* TotalDataCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653ED82495CBA2008DE496 /* TotalDataCard.swift */; };
 		27653EDB2495CFE0008DE496 /* TotalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653EDA2495CFE0008DE496 /* TotalDataView.swift */; };
+		27653EDD24980CDC008DE496 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653EDC24980CDC008DE496 /* SearchView.swift */; };
+		27653EDF2498263A008DE496 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653EDE2498263A008DE496 /* CountryDetailView.swift */; };
 		A6A29B25C776939AB94A3F5F /* Pods_COVID_19_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073EDE9E3A9AF4697DB5ECE /* Pods_COVID_19_Tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		27653ED42495C33F008DE496 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		27653ED82495CBA2008DE496 /* TotalDataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataCard.swift; sourceTree = "<group>"; };
 		27653EDA2495CFE0008DE496 /* TotalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataView.swift; sourceTree = "<group>"; };
+		27653EDC24980CDC008DE496 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		27653EDE2498263A008DE496 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		70A1404D0059E254DACA6C66 /* Pods-COVID-19 Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19 Tracker.debug.xcconfig"; path = "Target Support Files/Pods-COVID-19 Tracker/Pods-COVID-19 Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +136,8 @@
 				27653ED22495C24A008DE496 /* CountryDataView.swift */,
 				27653ED82495CBA2008DE496 /* TotalDataCard.swift */,
 				27653EDA2495CFE0008DE496 /* TotalDataView.swift */,
+				27653EDC24980CDC008DE496 /* SearchView.swift */,
+				27653EDE2498263A008DE496 /* CountryDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,7 +283,9 @@
 				27653EAD2491CB8C008DE496 /* SceneDelegate.swift in Sources */,
 				27653EB22491CB8C008DE496 /* ContentView.swift in Sources */,
 				27653EC42492071B008DE496 /* Model.swift in Sources */,
+				27653EDF2498263A008DE496 /* CountryDetailView.swift in Sources */,
 				27653EC22491D519008DE496 /* DataFetchRequest.swift in Sources */,
+				27653EDD24980CDC008DE496 /* SearchView.swift in Sources */,
 				27653EB02491CB8C008DE496 /* COVID_19_Tracker.xcdatamodeld in Sources */,
 				27653EDB2495CFE0008DE496 /* TotalDataView.swift in Sources */,
 				27653ECF2493DD65008DE496 /* RecentView.swift in Sources */,

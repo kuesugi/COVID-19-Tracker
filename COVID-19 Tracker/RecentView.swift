@@ -12,12 +12,17 @@ struct RecentView: View {
     
     @ObservedObject var dataFetch = DataFetchRequest()
     @State var searchText = ""
+    @State var isSearchVisible = false
     
     var body: some View {
         
         NavigationView {
             
             VStack {
+                if isSearchVisible {
+                    SearchView(searchText: $searchText)
+                }
+                
                 TotalDataView(totalData: dataFetch.totalData)
                 ListHeaderView()
                 
@@ -31,6 +36,17 @@ struct RecentView: View {
                 }
             }
             .navigationBarTitle("Recent Data", displayMode: .inline)
+            .navigationBarItems(trailing:
+                Button(action: {
+                    self.isSearchVisible.toggle()
+                    
+                    if !self.isSearchVisible {
+                        self.searchText = ""
+                    }
+                }, label: {
+                    Image(systemName: "magnifyingglass")
+                })
+            )
         }
     }
 }
