@@ -16,7 +16,7 @@ struct ListHeaderView: View {
             Text("Country")
                 .fontWeight(.bold)
                 .font(.subheadline)
-                .frame(width: 90, alignment: .leading)
+                .frame(width: 85, alignment: .leading)
                 .padding(.leading, 15)
             Spacer()
             
@@ -42,4 +42,5 @@ struct ListHeaderView: View {
         }
         .background(Color(.lightGray))
     }
+    
 }

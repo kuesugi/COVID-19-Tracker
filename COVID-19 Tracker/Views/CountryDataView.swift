@@ -22,7 +22,6 @@ struct CountryDataView: View {
             Spacer()
             
             Text(countryData.confirmed.formatNumber())
-                .foregroundColor(.orange)
                 .font(.subheadline)
                 .frame(width: 70, height: 40, alignment: .center)
                 .padding(.leading, 5)
@@ -40,11 +39,5 @@ struct CountryDataView: View {
                 .font(.subheadline)
                 .foregroundColor(.green)
         }
-    }
-}
-
-struct CountryDataView_Previews: PreviewProvider {
-    static var previews: some View {
-        CountryDataView(countryData: mockCountryData)
     }
 }
