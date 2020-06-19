@@ -2,20 +2,47 @@
 //  MapView.swift
 //  COVID-19 Tracker
 //
-//  Created by Zhaoyi Ma on 6/17/20.
+//  Created by Zhaoyi Ma on 6/19/20.
 //  Copyright © 2020 Zhaoyi Ma. All rights reserved.
 //
 
+import UIKit
+import MapKit
 import SwiftUI
 
-struct MapView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct MapView: UIViewRepresentable {
+    
+    @Binding var countryData: [CountryData]
+    
+    func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
+        var allAnnotations: [CovidCaseAnnotation] = []
+    
+        for data in countryData {
+            let countryNameNum = data.country + "\n Confirmed " + data.confirmed.formatNumber() + "\n Deaths " + data.deaths.formatNumber()
+            
+            let coordinate = CLLocationCoordinate2D(latitude: data.latitude, longitude: data.longitude)
+        
+            allAnnotations.append(CovidCaseAnnotation(countryNameNum: countryNameNum, coordinate: coordinate))
+        }
+        
+        uiView.annotations.forEach {
+            uiView.removeAnnotation($0)
+        }
+        uiView.addAnnotations(allAnnotations)
+    }
+    
+    func makeUIView(context: UIViewRepresentableContext<MapView>) -> MKMapView {
+        return MKMapView()
     }
 }
 
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
+
+class CovidCaseAnnotation: NSObject, MKAnnotation {
+    let countryNameNum: String?
+    let coordinate: CLLocationCoordinate2D
+    
+    init(countryNameNum: String?, coordinate: CLLocationCoordinate2D) {
+        self.countryNameNum = countryNameNum
+        self.coordinate = coordinate
     }
 }
