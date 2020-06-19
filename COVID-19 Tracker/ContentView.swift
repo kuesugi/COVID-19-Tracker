@@ -18,8 +18,12 @@ struct ContentView: View {
                     Tab(imageName: "chart.bar.fill", text: "Recent")
                 }
             .tag(0)
+            MapView()
+                .tabItem(){
+                    Tab(imageName: "map.fill", text: "Map")
+                }
+            .tag(1)
         }
-        
     }
 }
 

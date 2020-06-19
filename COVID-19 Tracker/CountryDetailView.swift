@@ -17,14 +17,15 @@ struct CountryDetailView: View {
         VStack {
             
             VStack {
-                
                 CountryDetailRowView(number: countryData.confirmed.formatNumber(), name: "Confirmed")
                     .padding(.top)
                 CountryDetailRowView(number: countryData.critical.formatNumber(), name: "Critical", color: .orange)
                 CountryDetailRowView(number: countryData.recovered.formatNumber(), name: "Recovered", color: .green)
+                // to avoid nan number
                 CountryDetailRowView(number: countryData.recovered == 0 ? "0.0%" : String(format: "%.2f%%", countryData.recoverRate), name: "Recovered Rate", color: .green)
                 CountryDetailRowView(number: countryData.deaths.formatNumber(), name: "Deaths", color: .red)
                 CountryDetailRowView(number: countryData.deaths == 0 ? "0.0%" : String(format: "%.2f%%", countryData.fatalityRate), name: "Death Rate", color: .red)
+            
             }
             .background(Color("cardBackgroundGray"))
             .cornerRadius(9.0)

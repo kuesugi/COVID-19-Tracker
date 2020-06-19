@@ -26,6 +26,7 @@
 		27653EDD24980CDC008DE496 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653EDC24980CDC008DE496 /* SearchView.swift */; };
 		27653EDF2498263A008DE496 /* CountryDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653EDE2498263A008DE496 /* CountryDetailRowView.swift */; };
 		27653EE324982C91008DE496 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653EE224982C91008DE496 /* CountryDetailView.swift */; };
+		27653EE5249AAA59008DE496 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27653EE4249AAA59008DE496 /* MapView.swift */; };
 		A6A29B25C776939AB94A3F5F /* Pods_COVID_19_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2073EDE9E3A9AF4697DB5ECE /* Pods_COVID_19_Tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		27653EDC24980CDC008DE496 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		27653EDE2498263A008DE496 /* CountryDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRowView.swift; sourceTree = "<group>"; };
 		27653EE224982C91008DE496 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		27653EE4249AAA59008DE496 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		70A1404D0059E254DACA6C66 /* Pods-COVID-19 Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COVID-19 Tracker.debug.xcconfig"; path = "Target Support Files/Pods-COVID-19 Tracker/Pods-COVID-19 Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				27653EAC2491CB8C008DE496 /* SceneDelegate.swift */,
 				27653EB12491CB8C008DE496 /* ContentView.swift */,
 				27653ECE2493DD65008DE496 /* RecentView.swift */,
+				27653EE4249AAA59008DE496 /* MapView.swift */,
 				27653EE224982C91008DE496 /* CountryDetailView.swift */,
 				27653ED72495CB87008DE496 /* Views */,
 				27653ED62495CB6F008DE496 /* Extensions */,
@@ -286,6 +289,7 @@
 				27653ED52495C33F008DE496 /* Extension.swift in Sources */,
 				27653EAD2491CB8C008DE496 /* SceneDelegate.swift in Sources */,
 				27653EB22491CB8C008DE496 /* ContentView.swift in Sources */,
+				27653EE5249AAA59008DE496 /* MapView.swift in Sources */,
 				27653EC42492071B008DE496 /* Model.swift in Sources */,
 				27653EDF2498263A008DE496 /* CountryDetailRowView.swift in Sources */,
 				27653EC22491D519008DE496 /* DataFetchRequest.swift in Sources */,
