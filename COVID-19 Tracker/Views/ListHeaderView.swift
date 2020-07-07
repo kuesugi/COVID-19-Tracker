@@ -40,7 +40,7 @@ struct ListHeaderView: View {
                 .frame(height: 40)
                 .padding(.trailing, 10)
         }
-        .background(Color(.lightGray))
+        .background(Color("cardBackgroundGray"))
     }
     
 }

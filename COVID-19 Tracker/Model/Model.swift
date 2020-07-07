@@ -41,5 +41,25 @@ struct CountryData {
     }
 }
 
+struct DetailedCountryData {
+    let country: String
+    let totalCases: Int
+    let newCases: Int
+    let activeCases: Int
+    let criticalCases: Int
+    let deathCases: Int
+    let newDeathCases: Int
+    let recoveredCases: Int
+    let testsDone: Int
+    
+    var fatalityRate: Double {
+        return (100.00 * Double(deathCases)) / Double(totalCases)
+    }
+    
+    var recoverRate: Double {
+        return (100.00 * Double(recoveredCases)) / Double(totalCases)
+    }
+}
+
 let mockTotalData = TotalData(confirmed: 10, critical: 1, deaths: 2, recovered: 9)
 let mockCountryData = CountryData(country: "MockCountry", confirmed: 6, critical: 2, deaths: 1, recovered: 4, longitude: 2.0, latitude: 1.0)
