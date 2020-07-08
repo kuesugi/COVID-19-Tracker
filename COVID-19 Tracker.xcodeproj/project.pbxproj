@@ -46,7 +46,7 @@
 		27653EBB2491CB8E008DE496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27653EC12491D519008DE496 /* DataFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchRequest.swift; sourceTree = "<group>"; };
 		27653EC32492071B008DE496 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		27653ECB2493229D008DE496 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
+		27653ECB2493229D008DE496 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Statics.swift; path = ../Statics.swift; sourceTree = "<group>"; };
 		27653ECE2493DD65008DE496 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
 		27653ED024948F17008DE496 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		27653ED22495C24A008DE496 /* CountryDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataView.swift; sourceTree = "<group>"; };
@@ -97,15 +97,9 @@
 			children = (
 				27653EAA2491CB8C008DE496 /* AppDelegate.swift */,
 				27653EAC2491CB8C008DE496 /* SceneDelegate.swift */,
-				27653EB12491CB8C008DE496 /* ContentView.swift */,
-				27653ECE2493DD65008DE496 /* RecentView.swift */,
-				27653EE224982C91008DE496 /* CountryDetailView.swift */,
-				27653EE6249D1516008DE496 /* MapView.swift */,
-				27653EE824A3CF19008DE496 /* MapContainerView.swift */,
 				27653ED72495CB87008DE496 /* Views */,
 				27653ED62495CB6F008DE496 /* Extensions */,
 				27653ECD2493DD15008DE496 /* Model */,
-				27653ECB2493229D008DE496 /* Statics.swift */,
 				27653EB32491CB8E008DE496 /* Assets.xcassets */,
 				27653EB82491CB8E008DE496 /* LaunchScreen.storyboard */,
 				27653EBB2491CB8E008DE496 /* Info.plist */,
@@ -136,6 +130,7 @@
 		27653ED62495CB6F008DE496 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				27653ECB2493229D008DE496 /* Statics.swift */,
 				27653ED42495C33F008DE496 /* Extension.swift */,
 			);
 			path = Extensions;
@@ -144,6 +139,11 @@
 		27653ED72495CB87008DE496 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27653EB12491CB8C008DE496 /* ContentView.swift */,
+				27653ECE2493DD65008DE496 /* RecentView.swift */,
+				27653EE224982C91008DE496 /* CountryDetailView.swift */,
+				27653EE824A3CF19008DE496 /* MapContainerView.swift */,
+				27653EE6249D1516008DE496 /* MapView.swift */,
 				27653ED024948F17008DE496 /* ListHeaderView.swift */,
 				27653ED22495C24A008DE496 /* CountryDataView.swift */,
 				27653ED82495CBA2008DE496 /* TotalDataCard.swift */,

@@ -19,7 +19,12 @@ struct CountryDetailView: View {
         VStack {
             // Cases
             Text("Cases")
-            .padding(.top, CGFloat(15))
+                .padding(.top, 15)
+                .padding(.bottom, 10)
+            
+            Text("Data with N/A means it is currently unavailable")
+                .font(.caption)
+                .padding(.bottom, 5)
             
             VStack {
                 CountryDetailRowView(number: countryData.confirmed.formatNumber(), name: "Confirmed")
