@@ -21,10 +21,11 @@ struct TotalDataView: View {
             }
             HStack {
                 TotalDataCard(number: totalData.critical.formatNumber(), name: "Critical", color: .orange)
-                TotalDataCard(number: String(format: "%.2f %%", totalData.recoverRate), name: "Recovered Rate", color: .green, nameFont: .subheadline)
+                TotalDataCard(number: String(format: "%.2f %%", totalData.recoverRate), name: ("Recovered Rate"), color: .green, nameFont: .subheadline)
                 TotalDataCard(number: String(format: "%.2f %%", totalData.fatalityRate), name: "Death Rate", color: .red, nameFont: .subheadline)
             }
         }
+        .multilineTextAlignment(.center)
         .frame(height: 170)
         .padding(10)
     }

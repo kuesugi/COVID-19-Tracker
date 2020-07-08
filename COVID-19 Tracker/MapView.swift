@@ -18,11 +18,11 @@ struct MapView: UIViewRepresentable {
         var allAnnotations: [CovidCaseAnnotation] = []
     
         for data in countryData {
-            let countryNameNum = data.country + "\n Confirmed " + data.confirmed.formatNumber() + "\n Deaths " + data.deaths.formatNumber()
+            let title = data.country + "\n Confirmed: " + data.confirmed.formatNumber() + "\n Deaths: " + data.deaths.formatNumber()
             
             let coordinate = CLLocationCoordinate2D(latitude: data.latitude, longitude: data.longitude)
         
-            allAnnotations.append(CovidCaseAnnotation(countryNameNum: countryNameNum, coordinate: coordinate))
+            allAnnotations.append(CovidCaseAnnotation(title: title, coordinate: coordinate))
         }
         
         uiView.annotations.forEach {
@@ -38,11 +38,11 @@ struct MapView: UIViewRepresentable {
 
 
 class CovidCaseAnnotation: NSObject, MKAnnotation {
-    let countryNameNum: String?
+    let title: String?
     let coordinate: CLLocationCoordinate2D
     
-    init(countryNameNum: String?, coordinate: CLLocationCoordinate2D) {
-        self.countryNameNum = countryNameNum
+    init(title: String?, coordinate: CLLocationCoordinate2D) {
+        self.title = title
         self.coordinate = coordinate
     }
 }

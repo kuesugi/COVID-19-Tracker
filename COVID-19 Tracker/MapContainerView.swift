@@ -9,9 +9,7 @@
 import SwiftUI
 
 struct MapContainerView: View {
-    
     @ObservedObject var dataFetch = DataFetchRequest()
-    
     
     var body: some View {
         MapView(countryData: $dataFetch.allCountriesData)

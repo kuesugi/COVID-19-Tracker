@@ -11,7 +11,6 @@ import SwiftUI
 struct RecentView: View {
     
     @ObservedObject var dataFetch = DataFetchRequest()
-    @ObservedObject var test = CountryStatsFetchRequest()
     @State var searchText = ""
     @State var isSearchVisible = false
     
@@ -32,7 +31,7 @@ struct RecentView: View {
                         self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
                     }, id: \.country) { countryData in
                         
-                        NavigationLink(destination: CountryDetailView(countryName: countryData.country)) {
+                        NavigationLink(destination: CountryDetailView(countryName: countryData.country, countryData: countryData)) {
                              CountryDataView(countryData: countryData)
                         }
                     }
