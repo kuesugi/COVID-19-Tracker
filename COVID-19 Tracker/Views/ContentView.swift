@@ -9,21 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
-  
+    
     var body: some View {
         
         TabView {
             RecentView()
                 .tabItem(){
                     Tab(imageName: "chart.bar.fill", text: "Recent")
-                }
+            }
             .tag(0)
             
             MapContainerView()
                 .edgesIgnoringSafeArea(.vertical)
                 .tabItem(){
                     Tab(imageName: "map.fill", text: "Map")
-                }
+            }
             .tag(1)
         }
     }

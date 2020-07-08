@@ -13,7 +13,7 @@ struct CountryDetailView: View {
     
     var countryName: String
     var countryData: CountryData
-
+    
     var body: some View {
         
         VStack {
